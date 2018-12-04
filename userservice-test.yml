@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: userservice
+  datasource:
+    url: jdbc:mysql://locahost/mydb
+    password:123456
+    driver-calss-name: com.mysql.jdbc.Driver
+    username:root
+  server:
+    port:8883
+  eureka: 
+    instance:
+      preferIpAddress: true
+      hostname: localhost
+    client: 
+      registerWithEureka: true
+      fetchRegistry: false
+      servuceUrl:
+        defaultZone: http://locahost:8761/eureka/
